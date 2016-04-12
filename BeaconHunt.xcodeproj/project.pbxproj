@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45E04B801B5F825D000F5ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04B7F1B5F825D000F5ACC /* AppDelegate.swift */; };
+		45E04B831B5F825D000F5ACC /* BeaconHunt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45E04B811B5F825D000F5ACC /* BeaconHunt.xcdatamodeld */; };
+		45E04B851B5F825D000F5ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04B841B5F825D000F5ACC /* ViewController.swift */; };
+		45E04B881B5F825D000F5ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E04B861B5F825D000F5ACC /* Main.storyboard */; };
+		45E04B8A1B5F825D000F5ACC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E04B891B5F825D000F5ACC /* Images.xcassets */; };
+		45E04B8D1B5F825D000F5ACC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E04B8B1B5F825D000F5ACC /* LaunchScreen.xib */; };
+		45E04B991B5F825D000F5ACC /* BeaconHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04B981B5F825D000F5ACC /* BeaconHuntTests.swift */; };
+		45E04BA51B5F84C0000F5ACC /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BA41B5F84C0000F5ACC /* AWSCore.framework */; };
+		45E04BA71B5F84CE000F5ACC /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BA61B5F84CE000F5ACC /* AWSSNS.framework */; };
+		45E04BA91B5F8585000F5ACC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BA81B5F8585000F5ACC /* CoreData.framework */; };
+		45E04BAB1B5F858D000F5ACC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BAA1B5F858D000F5ACC /* CoreLocation.framework */; };
+		45E04BAD1B5F85AD000F5ACC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BAC1B5F85AD000F5ACC /* libz.dylib */; };
+		45E04BAF1B5F85BB000F5ACC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E04BAE1B5F85BB000F5ACC /* libsqlite3.dylib */; };
+		45E04BB21B5F87B2000F5ACC /* AWSParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04BB11B5F87B2000F5ACC /* AWSParams.swift */; };
+		45E04BB41B5F8FB0000F5ACC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04BB31B5F8FB0000F5ACC /* SwiftyJSON.swift */; };
+		45E04BB61B5FC26E000F5ACC /* OLBSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04BB51B5FC26E000F5ACC /* OLBSAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45E04B931B5F825D000F5ACC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45E04B721B5F825D000F5ACC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45E04B791B5F825D000F5ACC;
+			remoteInfo = BeaconHunt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45E04B7A1B5F825D000F5ACC /* BeaconHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E04B7E1B5F825D000F5ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E04B7F1B5F825D000F5ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45E04B821B5F825D000F5ACC /* BeaconHunt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconHunt.xcdatamodel; sourceTree = "<group>"; };
+		45E04B841B5F825D000F5ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45E04B871B5F825D000F5ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45E04B891B5F825D000F5ACC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45E04B8C1B5F825D000F5ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45E04B921B5F825D000F5ACC /* BeaconHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E04B971B5F825D000F5ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E04B981B5F825D000F5ACC /* BeaconHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconHuntTests.swift; sourceTree = "<group>"; };
+		45E04BA41B5F84C0000F5ACC /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSCore.framework; sourceTree = "<group>"; };
+		45E04BA61B5F84CE000F5ACC /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSSNS.framework; sourceTree = "<group>"; };
+		45E04BA81B5F8585000F5ACC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		45E04BAA1B5F858D000F5ACC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		45E04BAC1B5F85AD000F5ACC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		45E04BAE1B5F85BB000F5ACC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		45E04BB01B5F867F000F5ACC /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		45E04BB11B5F87B2000F5ACC /* AWSParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AWSParams.swift; path = ../AWSParams.swift; sourceTree = "<group>"; };
+		45E04BB31B5F8FB0000F5ACC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		45E04BB51B5FC26E000F5ACC /* OLBSAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OLBSAPI.swift; path = BeaconHunt/OLBSAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45E04B771B5F825D000F5ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E04BAF1B5F85BB000F5ACC /* libsqlite3.dylib in Frameworks */,
+				45E04BAD1B5F85AD000F5ACC /* libz.dylib in Frameworks */,
+				45E04BAB1B5F858D000F5ACC /* CoreLocation.framework in Frameworks */,
+				45E04BA91B5F8585000F5ACC /* CoreData.framework in Frameworks */,
+				45E04BA51B5F84C0000F5ACC /* AWSCore.framework in Frameworks */,
+				45E04BA71B5F84CE000F5ACC /* AWSSNS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E04B8F1B5F825D000F5ACC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45E04B711B5F825D000F5ACC = {
+			isa = PBXGroup;
+			children = (
+				45E04BB51B5FC26E000F5ACC /* OLBSAPI.swift */,
+				45E04BAE1B5F85BB000F5ACC /* libsqlite3.dylib */,
+				45E04BAC1B5F85AD000F5ACC /* libz.dylib */,
+				45E04BAA1B5F858D000F5ACC /* CoreLocation.framework */,
+				45E04BA81B5F8585000F5ACC /* CoreData.framework */,
+				45E04BA61B5F84CE000F5ACC /* AWSSNS.framework */,
+				45E04BA41B5F84C0000F5ACC /* AWSCore.framework */,
+				45E04B7C1B5F825D000F5ACC /* BeaconHunt */,
+				45E04B951B5F825D000F5ACC /* BeaconHuntTests */,
+				45E04B7B1B5F825D000F5ACC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45E04B7B1B5F825D000F5ACC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45E04B7A1B5F825D000F5ACC /* BeaconHunt.app */,
+				45E04B921B5F825D000F5ACC /* BeaconHuntTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45E04B7C1B5F825D000F5ACC /* BeaconHunt */ = {
+			isa = PBXGroup;
+			children = (
+				45E04BB11B5F87B2000F5ACC /* AWSParams.swift */,
+				45E04B7F1B5F825D000F5ACC /* AppDelegate.swift */,
+				45E04BB01B5F867F000F5ACC /* Bridging-Header.h */,
+				45E04BB31B5F8FB0000F5ACC /* SwiftyJSON.swift */,
+				45E04B841B5F825D000F5ACC /* ViewController.swift */,
+				45E04B861B5F825D000F5ACC /* Main.storyboard */,
+				45E04B891B5F825D000F5ACC /* Images.xcassets */,
+				45E04B8B1B5F825D000F5ACC /* LaunchScreen.xib */,
+				45E04B811B5F825D000F5ACC /* BeaconHunt.xcdatamodeld */,
+				45E04B7D1B5F825D000F5ACC /* Supporting Files */,
+			);
+			path = BeaconHunt;
+			sourceTree = "<group>";
+		};
+		45E04B7D1B5F825D000F5ACC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45E04B7E1B5F825D000F5ACC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45E04B951B5F825D000F5ACC /* BeaconHuntTests */ = {
+			isa = PBXGroup;
+			children = (
+				45E04B981B5F825D000F5ACC /* BeaconHuntTests.swift */,
+				45E04B961B5F825D000F5ACC /* Supporting Files */,
+			);
+			path = BeaconHuntTests;
+			sourceTree = "<group>";
+		};
+		45E04B961B5F825D000F5ACC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45E04B971B5F825D000F5ACC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45E04B791B5F825D000F5ACC /* BeaconHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E04B9C1B5F825D000F5ACC /* Build configuration list for PBXNativeTarget "BeaconHunt" */;
+			buildPhases = (
+				45E04B761B5F825D000F5ACC /* Sources */,
+				45E04B771B5F825D000F5ACC /* Frameworks */,
+				45E04B781B5F825D000F5ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconHunt;
+			productName = BeaconHunt;
+			productReference = 45E04B7A1B5F825D000F5ACC /* BeaconHunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45E04B911B5F825D000F5ACC /* BeaconHuntTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E04B9F1B5F825D000F5ACC /* Build configuration list for PBXNativeTarget "BeaconHuntTests" */;
+			buildPhases = (
+				45E04B8E1B5F825D000F5ACC /* Sources */,
+				45E04B8F1B5F825D000F5ACC /* Frameworks */,
+				45E04B901B5F825D000F5ACC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E04B941B5F825D000F5ACC /* PBXTargetDependency */,
+			);
+			name = BeaconHuntTests;
+			productName = BeaconHuntTests;
+			productReference = 45E04B921B5F825D000F5ACC /* BeaconHuntTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45E04B721B5F825D000F5ACC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = OpenLobster;
+				TargetAttributes = {
+					45E04B791B5F825D000F5ACC = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = A82HBZWRZ6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					45E04B911B5F825D000F5ACC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 45E04B791B5F825D000F5ACC;
+					};
+				};
+			};
+			buildConfigurationList = 45E04B751B5F825D000F5ACC /* Build configuration list for PBXProject "BeaconHunt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45E04B711B5F825D000F5ACC;
+			productRefGroup = 45E04B7B1B5F825D000F5ACC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45E04B791B5F825D000F5ACC /* BeaconHunt */,
+				45E04B911B5F825D000F5ACC /* BeaconHuntTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45E04B781B5F825D000F5ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E04B881B5F825D000F5ACC /* Main.storyboard in Resources */,
+				45E04B8D1B5F825D000F5ACC /* LaunchScreen.xib in Resources */,
+				45E04B8A1B5F825D000F5ACC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E04B901B5F825D000F5ACC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45E04B761B5F825D000F5ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E04B851B5F825D000F5ACC /* ViewController.swift in Sources */,
+				45E04BB21B5F87B2000F5ACC /* AWSParams.swift in Sources */,
+				45E04B831B5F825D000F5ACC /* BeaconHunt.xcdatamodeld in Sources */,
+				45E04BB41B5F8FB0000F5ACC /* SwiftyJSON.swift in Sources */,
+				45E04B801B5F825D000F5ACC /* AppDelegate.swift in Sources */,
+				45E04BB61B5FC26E000F5ACC /* OLBSAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45E04B8E1B5F825D000F5ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45E04B991B5F825D000F5ACC /* BeaconHuntTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45E04B941B5F825D000F5ACC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45E04B791B5F825D000F5ACC /* BeaconHunt */;
+			targetProxy = 45E04B931B5F825D000F5ACC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45E04B861B5F825D000F5ACC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E04B871B5F825D000F5ACC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45E04B8B1B5F825D000F5ACC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45E04B8C1B5F825D000F5ACC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45E04B9A1B5F825D000F5ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E04B9B1B5F825D000F5ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45E04B9D1B5F825D000F5ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BeaconHunt;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45E04B9E1B5F825D000F5ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = BeaconHunt;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45E04BA01B5F825D000F5ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeaconHuntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = BeaconHuntTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconHunt.app/BeaconHunt";
+			};
+			name = Debug;
+		};
+		45E04BA11B5F825D000F5ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BeaconHuntTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = BeaconHuntTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeaconHunt.app/BeaconHunt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E04B751B5F825D000F5ACC /* Build configuration list for PBXProject "BeaconHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E04B9A1B5F825D000F5ACC /* Debug */,
+				45E04B9B1B5F825D000F5ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E04B9C1B5F825D000F5ACC /* Build configuration list for PBXNativeTarget "BeaconHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E04B9D1B5F825D000F5ACC /* Debug */,
+				45E04B9E1B5F825D000F5ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45E04B9F1B5F825D000F5ACC /* Build configuration list for PBXNativeTarget "BeaconHuntTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E04BA01B5F825D000F5ACC /* Debug */,
+				45E04BA11B5F825D000F5ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45E04B811B5F825D000F5ACC /* BeaconHunt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45E04B821B5F825D000F5ACC /* BeaconHunt.xcdatamodel */,
+			);
+			currentVersion = 45E04B821B5F825D000F5ACC /* BeaconHunt.xcdatamodel */;
+			path = BeaconHunt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45E04B721B5F825D000F5ACC /* Project object */;
+}
